@@ -33,4 +33,23 @@ public class AltaSolicitudServices {
         return response;
 
     }
+
+    public ResponseBase actualizarsolicitud(AltaSolicitudModel solicitud){
+
+        ResponseBase response = new ResponseBase();
+
+        try{
+            response.setResponse("Registro Actualizado Correctamente");
+            response.setResponseCode(200);
+
+        }
+        catch(Exception e)
+        {
+            response.setResponse(e.getMessage());
+            response.setResponseCode(400);
+        }
+        
+        return response;
+
+    }
 }
