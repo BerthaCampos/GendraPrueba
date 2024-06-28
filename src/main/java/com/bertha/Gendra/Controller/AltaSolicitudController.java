@@ -21,4 +21,10 @@ public class AltaSolicitudController{
         return altaSolicitudServices.altasolicitud(solicitud);
     }
 
+    @PostMapping("/update")
+    public ResponseBase actualizarsolicitud(@RequestBody AltaSolicitudModel solicitud)
+    {
+        return altaSolicitudServices.actualizarsolicitud(solicitud);
+    }
+
 }
